@@ -9,7 +9,7 @@ It calculates the keytag with the digest type 1 (SHA1) and digest type 2 (SHA256
  
 ## Usage
 
-*Documentation"
+*Documentation*
 
 	/**
 	 * Calculate ds-rdata from dnskey-rdata
