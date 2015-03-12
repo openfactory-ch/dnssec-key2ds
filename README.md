@@ -9,6 +9,42 @@ It calculates the keytag with the digest type 1 (SHA1) and digest type 2 (SHA256
  
 ## Usage
 
+*Documentation"
+
+	/**
+	 * Calculate ds-rdata from dnskey-rdata
+	 * For additional information please refer to RFC 5910: http://www.ietf.org/rfc/rfc5910.txt
+	 * 
+	 * @param string owner, the coanonical name of the owner (e.g. example.com.)
+	 * @param int flags, the flags of the dnskey (only 256 or 257)
+	 * @param int protocol, the protocol of the dnskey (only 3)
+	 * @param int algoritm, the algorithm of the dnskey (only 3, 5, 6, 7, 8, 10, 12, 13 or 14)
+	 * @param string publickey, the full publickey base64 encoded (care, no spaces allowed)
+	 * 
+	 * @return array, on success
+	 *   Array (
+	 *     [owner] => $owner
+	 *     [keytag] => $keytag
+	 *     [algorithm] => $algorithm
+	 *     [digest] => Array (
+	 *       [] => Array (
+	 *         [type] => 1
+	 *         [hash] => $digest_sha1
+	 *       ),
+	 *       [] => Array (
+	 *         [type] => 2
+	 *         [hash] => $digest_sha256
+	 *       )
+	 *     )
+	 *   )
+	 * @return int < 0, on failure
+	 *   -1, unsupported owner
+	 *   -2, unsupported flags
+	 *   -3, unsupported protocol
+	 *   -4, unsupported algorithm
+	 *   -5, unsupported publickey
+	 */
+
 *Example*
 
 	<?php
@@ -25,7 +61,7 @@ It calculates the keytag with the digest type 1 (SHA1) and digest type 2 (SHA256
 
 	print_r($result);
 	
-*returns*
+*Returns*
 
 	Array
 	(
