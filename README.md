@@ -44,6 +44,9 @@ It calculates the keytag with the digest type 1 (SHA1) and digest type 2 (SHA256
 	 *   -4, unsupported algorithm
 	 *   -5, unsupported publickey
 	 */
+	function dnssec_key2ds($owner, $flags, $protocol, $algorithm, $publickey) {
+
+	}
 
 *Example*
 
