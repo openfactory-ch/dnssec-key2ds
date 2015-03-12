@@ -1,7 +1,7 @@
 # php-dnssec-key2ds
 A simple lightweight opensource function for calculating ds-rdata from dnskey-rdata according to RFC 5910: http://www.ietf.org/rfc/rfc5910.txt
 
-It calculates the keytag with the digest type 1 (SHA1) and digest type 2 (SHA2) at the same time.
+It calculates the keytag with the digest type 1 (SHA1) and digest type 2 (SHA256) at the same time.
 
 ## Requirements
 
