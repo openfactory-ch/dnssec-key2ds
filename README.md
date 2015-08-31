@@ -7,7 +7,7 @@ It calculates the keytag with the digest type 1 (SHA1) and digest type 2 (SHA256
 ## Requirements
 
 * php5
-* [latest release](https://github.com/openfactory-ch/whmcs-oath-addon/releases)
+* [latest release](https://github.com/openfactory-ch/dnssec-key2ds/releases)
 
 ## Usage
 
@@ -93,4 +93,4 @@ It calculates the keytag with the digest type 1 (SHA1) and digest type 2 (SHA256
 
 ## Issues
 
-If you discover any issues or bugs, please report them on the [issue tracker](https://github.com/openfactory-ch/whmcs-oath-addon/issues).
+If you discover any issues or bugs, please report them on the [issue tracker](https://github.com/openfactory-ch/dnssec-key2ds/issues).
